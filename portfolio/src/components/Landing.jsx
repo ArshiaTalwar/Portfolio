@@ -96,8 +96,8 @@ export default function Landing() {
          {/* Mobile menu, show/hide based on mobile menu state. */}
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-purple-400 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between" >
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img
@@ -115,7 +115,7 @@ export default function Landing() {
                 <XMarkIcon aria-hidden="true" className="size-6" />
               </button>
             </div>
-            <div className="mt-6 flow-root">
+            <div className="mt-6 flow-root" >
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
@@ -131,7 +131,7 @@ export default function Landing() {
                 <div className="py-6">
                   <a
                     href="mailto:arshiatalwar17@gamil.com"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50"
                   >
                     Hire me
                   </a>
@@ -153,7 +153,7 @@ export default function Landing() {
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30  sm:left-1/2 sm:w-[36.125rem] lg::w-[72.1875rem]"
           />
         </div>
-        <div className="mx-10 py-40 sm:py-40 lg:py-15 mb-0">
+        <div className="mx-10 py-40 sm:py-40 lg:py-15 mb-0" >
           
           <div className="text-center " >
             
@@ -235,19 +235,28 @@ export default function Landing() {
     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
       <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
         <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-          Mobile friendly
+        SignGuru
+       
         </p>
         <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+          <em> -React.js Developer</em>
+          
         </p>
       </div>
       <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
         <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-          <img
+          {/* <img
             className="size-full object-cover object-top"
             src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
             alt="Mobile friendly"
-          />
+          /> */}
+         <li style={{color:"white"}}>
+         
+          <ul>• Developed an interactive web app for translating sign language gestures into text using machine learning models.
+</ul><ul>• Built a login and authentication system using Firebase.</ul>
+<ul>• Designed a responsive UI ensuring accessibility across devices.</ul>
+<ul>• Integrated real-time updates with WebSocket.</ul>
+</li>
         </div>
       </div>
     </div>
@@ -255,21 +264,26 @@ export default function Landing() {
   </a>
 
   {/* Card 2 - Performance */}
+  
   <div className="relative max-lg:row-start-1">
     <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
       <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-        <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Performance</p>
+        <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Online Supermarket</p>
         <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.
+        
+        • Developed a web app where customers can buy products and managers can list products for sale.
+•Implemented product listing and shopping cart functionalities.<br/>
+•Developed the backend with Spring Boot and Java.
+•Used SQL for database management.
         </p>
       </div>
       <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-        <img
+        {/* <img
           className="w-full max-lg:max-w-xs"
           src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
           alt="Performance"
-        />
+        /> */}
       </div>
     </div>
     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
@@ -280,17 +294,20 @@ export default function Landing() {
     <div className="absolute inset-px rounded-lg bg-white"></div>
     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
       <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-        <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Security</p>
+        <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center"> Amazon Clone</p>
         <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-          Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.
+        •Built a clone of Amazon’s homepage layout using HTML, CSS, and JavaScript.<br/>
+•Replicated the homepage layout and basic functionalities.<br/>
+•Designed and implemented responsive web elements.
+
         </p>
       </div>
       <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-        <img
+        {/* <img
           className="h-[min(152px,40cqw)] object-cover"
           src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
           alt="Security"
-        />
+        /> */}
       </div>
     </div>
     <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
@@ -302,23 +319,30 @@ export default function Landing() {
     <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
       <div className="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
         <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-          Powerful APIs
+          YapNest
         </p>
         <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-          Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget sem sodales gravida.
+        <em> -FullStack developer</em><br/>
+          A blogging platform where users can create, read, update, and delete posts.<br/>
         </p>
       </div>
       <div className="relative min-h-[30rem] w-full grow">
         <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
           <div className="flex bg-gray-800/40 ring-1 ring-white/5">
             <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
-              <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
+              {/* <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
                 NotificationSetting.jsx
-              </div>
-              <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+              </div> */}
+              {/* <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div> */}
             </div>
           </div>
-          <div className="px-6 pb-14 pt-6">{/* Your code example */}</div>
+          {/* <div className="px-6 pb-14 pt-6">Your code example</div> */}
+          <p style={{color:"white"}}> • User-friendly blog editor with rich-text and multimedia support.<br/>
+•Secure authentication and scalable backend architecture<br/>
+•Designed and implemented responsive web elements.
+•Used React.js for the frontend, Node.js for the backend and firebase for database
+</p>
+
         </div>
       </div>
     </div>
@@ -344,7 +368,7 @@ export default function Landing() {
         <div className="flex-1 mx-auto max-w-xl lg:mx-0">
           <h2 className="text-5xl font-semibold tracking-tight text-gray-600 sm:text-7xl" id='about'>About me</h2>
           <p className="mt-20 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-           I'm a tech enthusiast,currently in B.Tech third year based in delhi-ncr who is looking for opportunities to grow and learn.<br/>
+           I'm a tech enthusiast,a pre-final year B.Tech student based in delhi-ncr who is looking for opportunities to grow and learn.<br/>
            I'm a Frontend Web Developer focused on building and managing the Front-end of Websites and Web Applications. Check out some of my work in the Projects section. <br/>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
           </p>
         </div>
